@@ -81,11 +81,11 @@ onBeforeUnmount(() => {
                 }"
                 class="flex justify-center mt-10 md:mt-16 space-x-6 dark:text-slate-300 text-gray-600"
             >
-                <a href="https://github.com/FahimAnzamDip" target="_blank" class="group flex items-center space-x-3">
+                <a href="https://github.com/PUTRA2906" target="_blank" class="group flex items-center space-x-3">
                     <img class="w-[1.5rem] md:w-[1.7rem]" src="/images/github.png" alt="Fahim's Github" />
                     <span class="text-lg group-hover:text-gray-700 dark:group-hover:text-white font-medium transition-all duration-300">Github</span>
                 </a>
-                <a href="https://www.linkedin.com/in/fahim-anzam-dip/" target="_blank" class="group flex items-center space-x-3">
+                <a href="https://www.linkedin.com/in/dava-putra-wibawa-b6b3b3265/" target="_blank" class="group flex items-center space-x-3">
                     <img class="w-[1.5rem] md:w-[1.7rem]" src="/images/linkedin.png" alt="Fahim's Linkedin" />
                     <span class="text-lg group-hover:text-gray-700 dark:group-hover:text-white font-medium transition-all duration-300">Linkedin</span>
                 </a>
