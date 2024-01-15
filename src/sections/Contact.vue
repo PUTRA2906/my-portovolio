@@ -149,7 +149,7 @@ let submitContactForm = () => {
                             </div>
                             <div>
                                 <h4 class="text-xl dark:text-white mb-1">Location</h4>
-                                <p><a href="https://www.google.com/maps/place/Dhaka/@23.7809757,90.3372882,12z/" target="_blank" class="transition-all duration-300 hover:text-secondary-500 dark:hover:text-secondary-300">Dhaka, Bangladesh</a></p>
+                                <p><a href="https://www.google.com/maps/place/Dhaka/@23.7809757,90.3372882,12z/" target="_blank" class="transition-all duration-300 hover:text-secondary-500 dark:hover:text-secondary-300">Banyuwangi,Indonesia</a></p>
                             </div>
                         </li>
                     </ul>
