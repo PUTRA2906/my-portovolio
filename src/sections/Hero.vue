@@ -48,7 +48,7 @@ onBeforeUnmount(() => {
                 }"
                 class="text-4xl md:text-6xl lg:text-8xl font-bold font-heading dark:text-slate-100 mb-5 text-center"
             >
-                I'm <span class="bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to-purple-500 dark:from-sky-400 dark:to-teal-400">Fahim Anzam</span>
+                I'm <span class="bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to-purple-500 dark:from-sky-400 dark:to-teal-400">Dava Putra</span>
             </h1>
             <h2
                 v-motion

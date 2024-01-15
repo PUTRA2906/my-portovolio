@@ -15,14 +15,14 @@
         {
             "id": 3,
             "link": "#",
-            "name": "Php",
-            "image": "images/php.jpg"
+            "name": "Java",
+            "image": "images/java.jpg"
         },
         {
             "id": 4,
             "link": "#",
-            "name": "Laravel",
-            "image": "images/laravel.jpg"
+            "name": "Spring",
+            "image": "images/springboot.png"
         },
         {
             "id": 5,
@@ -33,38 +33,39 @@
         {
             "id": 6,
             "link": "#",
-            "name": "Vue.js",
-            "image": "images/vue.jpg"
+            "name": "next.js",
+            "image": "images/next.jpg"
         },
         {
             "id": 7,
-            "link": "#",
-            "name": "Alpine.js",
-            "image": "images/alpine.jpg"
-        },
-        {
-            "id": 8,
-            "link": "#",
-            "name": "Livewire",
-            "image": "images/livewire.jpg"
-        },
-        {
-            "id": 9,
-            "link": "#",
-            "name": "Github",
-            "image": "images/github.jpg"
-        },
-        {
-            "id": 10,
             "link": "#",
             "name": "MySQL",
             "image": "images/sql.jpg"
         },
         {
+            "id": 8,
+            "link": "#",
+            "name": "Premiere",
+            "image": "images/pr.jpg"
+        },
+        {
+            "id": 9,
+            "link": "#",
+            "name": "After Effect",
+            "image": "images/ae.jpg"
+        },
+        {
+            "id": 10,
+            "link": "#",
+            "name": "Corel Draw",
+            "image": "images/cr.jpg"
+        }
+        ,
+        {
             "id": 11,
             "link": "#",
-            "name": "PostgreSQL",
-            "image": "images/pgsql.jpg"
+            "name": "Photoshop",
+            "image": "images/ps.jpg"
         }
     ]
 }

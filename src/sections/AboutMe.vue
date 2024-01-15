@@ -19,8 +19,8 @@ let currentTab = ref(1);
             <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
                 <div class="md:col-span-5 flex justify-center items-start">
                     <div class="relative">
-                        <img class="w-full rounded-lg md:w-[400px] border-8 border-slate-300 dark:border-white h-auto shadow-md" src="/images/fahim.png" alt="Fahim Anzam Dip" />
-                        <div class="absolute w-full md:w-[400px] h-[400px] bg-primary-400 border-8 border-slate-300 dark:border-white rounded-lg -z-10 bottom-5 right-6 hidden lg:block shadow-md"></div>
+                        <img class="w-full rounded-lg md:w-[300px] border-8 border-slate-300 dark:border-white h-auto shadow-md" src="/davput.jpeg" alt="Fahim Anzam Dip" />
+                        <div class="absolute w-full md:w-[300px] h-[400px] bg-primary-400 border-8 border-slate-300 dark:border-white rounded-lg -z-10 bottom-5 right-6 hidden lg:block shadow-md"></div>
                     </div>
                 </div>
 
@@ -74,8 +74,8 @@ let currentTab = ref(1);
                         <transition name="fade" mode="out-in">
                             <div v-if="currentTab === 1" class="dark:text-slate-200 tracking-wide">
                                 <div class="prose dark:prose-invert prose-teal tracking-wide mb-7 text-left md:text-justify">
-                                    <p>Hi, This is <strong>Fahim Anzam Dip</strong></p>
-                                    <p>Highly passionate about <strong>Software Development</strong> & <strong>Programming</strong> in general. I am a Full Stack Web Developer with strong focus on Backend Development. For the past <strong>two & a half years</strong> I have worked with multiple clients in various project based work. Currently working with <a target="_blank" href="https://hasteit.com">Haste IT</a> as a Web Developer.</p>
+                                    <p>Hi, This is <strong>Dava Putra W</strong></p>
+                                    <p>Highly passionate about <strong>Programming</strong> & <strong>Editing</strong> in general. I am a Full Stack Web Developer with strong focus on Backend Development. </p>
                                     <p>I am always open to learning new technologies and build new things that will shape the business of my clients.</p>
                                 </div>
 
@@ -103,8 +103,8 @@ let currentTab = ref(1);
                                 </Experience>
                             </div>
                             <div v-else-if="currentTab === 4" class="dark:text-slate-200 tracking-wide space-y-5">
-                                <Education degree="BSc in Computer Science & Engineering" institute="Green University of Bangladesh" timeline="February 2022 - Expected 2026" website="https://green.edu.bd/" />
-                                <Education degree="Diploma in Computer Technology" institute="Tangail Polytechnic Institute" timeline="August 2016 - December 2020" website="https://www.tpi.gov.bd/" />
+                                <Education degree="PSPT (Produksi siaran program televisi)" institute="Smkn Ihya Ulummudin Singojuruh" timeline="juli 2022 - Expected 2025" website="http://smkniu.sch.id/" />
+                                
                             </div>
                         </transition>
                     </div>
