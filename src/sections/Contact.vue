@@ -7,7 +7,8 @@ import InputLabel from "@/components/InputLabel.vue";
 import TextArea from "@/components/TextArea.vue";
 import Toast from "@/components/Toast.vue";
 
-const api = "https://fahim.canbebd.com/api/v1/messages";
+const api =
+  "https://script.google.com/macros/s/AKfycbzM_fmDb7XBzQs-ONo2G3UE5T-IrI2AYKGPf4JNdCOrGyL4AV0-gFiBFpMrNxQ8X7vZoQ/exec";
 
 let contactForm = reactive({
   name: "",
@@ -35,52 +36,36 @@ let submitContactForm = () => {
 
   fetch(api, {
     method: "POST",
+    mode: "no-cors", // Tambahkan ini
     headers: {
       "Content-Type": "application/json",
-      Accept: "application/json",
     },
     body: JSON.stringify(contactForm),
   })
-    .then((response) => {
-      if (response.status === 201) {
-        contactForm.name = "";
-        contactForm.email = "";
-        contactForm.subject = "";
-        contactForm.message = "";
+    .then(() => {
+      // Karena mode: "no-cors", kamu tidak bisa mendapatkan response
+      // Jadi kita anggap berhasil saja langsung reset form
+      contactForm.name = "";
+      contactForm.email = "";
+      contactForm.subject = "";
+      contactForm.message = "";
 
-        return response.json();
-      } else if (response.status === 422) {
-        return response.json();
-      } else {
-        loading.value = false;
-        throw new Error("Something went wrong");
-      }
+      contactFormErrors.name = "";
+      contactFormErrors.email = "";
+      contactFormErrors.subject = "";
+      contactFormErrors.message = "";
+
+      showToast.value = true;
+      setTimeout(() => {
+        showToast.value = false;
+      }, 10000);
+
+      loading.value = false;
     })
-    .then((data) => {
-      if (data.errors) {
-        contactFormErrors.name = data.errors.name ? data.errors.name[0] : "";
-        contactFormErrors.email = data.errors.email ? data.errors.email[0] : "";
-        contactFormErrors.subject = data.errors.subject
-          ? data.errors.subject[0]
-          : "";
-        contactFormErrors.message = data.errors.message
-          ? data.errors.message[0]
-          : "";
-
-        loading.value = false;
-      } else {
-        contactFormErrors.name = "";
-        contactFormErrors.email = "";
-        contactFormErrors.subject = "";
-        contactFormErrors.message = "";
-
-        showToast.value = true;
-        setTimeout(() => {
-          showToast.value = false;
-        }, 10000);
-
-        loading.value = false;
-      }
+    .catch((error) => {
+      alert("Gagal mengirim form.");
+      console.error(error);
+      loading.value = false;
     });
 };
 </script>
