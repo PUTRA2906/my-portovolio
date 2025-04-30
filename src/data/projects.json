@@ -2,7 +2,7 @@
   "projects": [
     {
       "id": 1,
-      "image": "images/project_1.jpg",
+      "image": "images/job-1.png",
       "category": "Client Project",
       "title": "Ynet internet solution",
       "tags": ["reactjs", "Type Script", "Vite js"],
